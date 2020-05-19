@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: #222C2A;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.hero h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #222C2A;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1128px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.hero {
+    background-color: #F3EED9;
+    color: #824936;
+    min-height: 660px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.desc-section h2 {
+    text-align: center;
+    color: #824936;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 48%;
+}
+
+.img {
+    width: 100%;
+}
+
+.img-section-1 {
+    background-color: #222C2A;
+    color: white;
+}
+
+.img-section-2 {
+    background-color: #824936;
+    color: white;
+}
+
+.img-section-2 .row {
+    flex-direction: row-reverse;
+}
