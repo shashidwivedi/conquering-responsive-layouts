@@ -74,6 +74,10 @@ ul {
     border-radius: 30px;
 }
 
+.btn:hover {
+    opacity: .85;
+}
+
 .center-text {
     text-align: center;
 }
