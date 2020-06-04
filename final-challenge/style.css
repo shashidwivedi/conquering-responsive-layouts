@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2E323F;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    /* margin-top: 0; */
+    line-height: 1.1;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section, footer {
+    padding: 4em 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background-color: #2E323F;
+    font-family: 'Montserrat', sans-serif;
+    padding: .5em 0;
+    text-align: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.header li {
+    display: inline-block;
+    padding: .75em 1em;
+}
+
+.brand-icon {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.btn {
+    background-color: #A59678;
+    color: #FFFFFF;
+    padding: .25em 1.1em;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Intro */
+.intro {
+    background-color: #3B4050;
+    color: #FFFFFF;
+}
+
+.intro__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.625rem;
+}
+
+.intro__text {
+    font-size: 1.5rem;
+}
+
+/* Section Two */
+.section-two {
+    background-color: rgb(238, 240, 245);
+}
+
+h2, h3, .brown-text {
+    color: #A59678;
+}
+
+/* Section Three */
+.sidebar__card {
+    background-color: #3B4050;
+    color: #FFFFFF;
+    padding: 1.5em;
+    margin-top: 30px;
+}
+
+.sidebar__card h2 {
+    color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+    background-color: #3B4050;
+    color: #FFFFFF;
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin: 0 0 4rem 0;
+}
+
+footer h3 {
+    font-size: 1.125rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .sidebar__card+.sidebar__card {
+        margin-left: 2em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .sidebar {
+        display: block;
+    }
+    
+    .sidebar__card+.sidebar__card {
+        margin-left: 0;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .col+.col {
+        margin-left: 2em;
+    }
+    
+    .intro__text {
+        align-self: center;
+    }
+    
+    .about__text {
+        width: 32%;
+    }
+    
+    .about__links li {
+        margin-bottom: 1.25em;
+    }
+    
+}
